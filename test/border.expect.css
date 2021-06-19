@@ -12,19 +12,19 @@ test-border {
 	border: inherit;
 }
 
-test-flowing-border:dir(ltr) {
+[dir="ltr"] test-flowing-border {
 	border-left: 1px solid black;
 }
 
-test-flowing-border:dir(rtl) {
+[dir="rtl"] test-flowing-border {
 	border-right: 1px solid black;
 }
 
-test-flowing-border:dir(ltr) {
+[dir="ltr"] test-flowing-border {
 	border-right: 2px solid black;
 }
 
-test-flowing-border:dir(rtl) {
+[dir="rtl"] test-flowing-border {
 	border-left: 2px solid black;
 }
 
@@ -54,37 +54,37 @@ test-border-color {
 	border-color: inherit;
 }
 
-test-flowing-border-width:dir(ltr) {
+[dir="ltr"] test-flowing-border-width {
 	border-width: 1px 4px 3px 2px;
 }
 
-test-flowing-border-width:dir(rtl) {
+[dir="rtl"] test-flowing-border-width {
 	border-width: 1px 2px 3px 4px;
 }
 
-test-flowing-border-width:dir(ltr) {
+[dir="ltr"] test-flowing-border-width {
 	border-left-width: 2px;
 	border-right-width: 4px;
 }
 
-test-flowing-border-width:dir(rtl) {
+[dir="rtl"] test-flowing-border-width {
 	border-right-width: 2px;
 	border-left-width: 4px;
 }
 
-test-flowing-border-width:dir(ltr) {
+[dir="ltr"] test-flowing-border-width {
 	border-left-width: 2px;
 }
 
-test-flowing-border-width:dir(rtl) {
+[dir="rtl"] test-flowing-border-width {
 	border-right-width: 2px;
 }
 
-test-flowing-border-width:dir(ltr) {
+[dir="ltr"] test-flowing-border-width {
 	border-right-width: 4px;
 }
 
-test-flowing-border-width:dir(rtl) {
+[dir="rtl"] test-flowing-border-width {
 	border-left-width: 4px;
 }
 
@@ -97,34 +97,34 @@ test-flowing-border-width {
 	border-bottom-width: 4px;
 }
 
-test-flowing-border-radius:dir(ltr) {
+[dir="ltr"] test-flowing-border-radius {
 	border-top-left-radius: 1px;
 }
 
-test-flowing-border-radius:dir(rtl) {
+[dir="rtl"] test-flowing-border-radius {
 	border-top-right-radius: 1px;
 }
 
-test-flowing-border-radius:dir(ltr) {
+[dir="ltr"] test-flowing-border-radius {
 	border-top-right-radius: 2px;
 }
 
-test-flowing-border-radius:dir(rtl) {
+[dir="rtl"] test-flowing-border-radius {
 	border-top-left-radius: 2px;
 }
 
-test-flowing-border-radius:dir(ltr) {
+[dir="ltr"] test-flowing-border-radius {
 	border-bottom-left-radius: 3px;
 }
 
-test-flowing-border-radius:dir(rtl) {
+[dir="rtl"] test-flowing-border-radius {
 	border-bottom-right-radius: 3px;
 }
 
-test-flowing-border-radius:dir(ltr) {
+[dir="ltr"] test-flowing-border-radius {
 	border-bottom-right-radius: 4px;
 }
 
-test-flowing-border-radius:dir(rtl) {
+[dir="rtl"] test-flowing-border-radius {
 	border-bottom-left-radius: 4px;
 }

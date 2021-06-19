@@ -22,34 +22,34 @@
 	transition: 1s padding-block-start ease;
 }
 
-.transition-inline-end:dir(ltr) {
+[dir="ltr"] .transition-inline-end {
 	transition: 1s right ease;
 }
 
-.transition-inline-end:dir(rtl) {
+[dir="rtl"] .transition-inline-end {
 	transition: 1s left ease;
 }
 
-.transition-inline-end:dir(ltr) {
+[dir="ltr"] .transition-inline-end {
 	transition: 1s margin-right ease;
 }
 
-.transition-inline-end:dir(rtl) {
+[dir="rtl"] .transition-inline-end {
 	transition: 1s margin-left ease;
 }
 
-.transition-inline-end:dir(ltr) {
+[dir="ltr"] .transition-inline-end {
 	transition: 1s padding-right ease;
 }
 
-.transition-inline-end:dir(rtl) {
+[dir="rtl"] .transition-inline-end {
 	transition: 1s padding-left ease;
 }
 
-.transition-mixed:dir(ltr) {
+[dir="ltr"] .transition-mixed {
 	transition: 1s opacity ease, 1s left ease;
 }
 
-.transition-mixed:dir(rtl) {
+[dir="rtl"] .transition-mixed {
 	transition: 1s opacity ease, 1s right ease;
 }
