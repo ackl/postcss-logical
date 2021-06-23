@@ -10,9 +10,11 @@ export default (decl, dir) => {
 					.removeAll()
 			: postcss.rule({ selector: "&" });
 
-	rule.selectors = rule.selectors.map(
-		(selector) => `[dir="${dir}"] ${selector}`
-	);
+	rule.selectors = rule.selectors.map((selector) => {
+		return Object(decl.parent).type === "root" || selector[0] === "&"
+			? `[dir="${dir}"] ${selector}`
+			: `[dir="${dir}"] & ${selector}`;
+	});
 
 	return rule;
 };

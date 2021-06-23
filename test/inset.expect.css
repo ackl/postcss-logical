@@ -21,43 +21,43 @@ test-inset {
 	right: 8px;
 }
 
-[dir="ltr"] test-flowing-inset {
+[dir="ltr"] & test-flowing-inset {
 	top: 1px;
 	left: 2px;
 	bottom: 3px;
 	right: 4px;
 }
 
-[dir="rtl"] test-flowing-inset {
+[dir="rtl"] & test-flowing-inset {
 	top: 1px;
 	right: 2px;
 	bottom: 3px;
 	left: 4px;
 }
 
-[dir="ltr"] test-flowing-inset {
+[dir="ltr"] & test-flowing-inset {
 	left: 5px;
 	right: 6px;
 }
 
-[dir="rtl"] test-flowing-inset {
+[dir="rtl"] & test-flowing-inset {
 	right: 5px;
 	left: 6px;
 }
 
-[dir="ltr"] test-flowing-inset {
+[dir="ltr"] & test-flowing-inset {
 	left: 7px;
 }
 
-[dir="rtl"] test-flowing-inset {
+[dir="rtl"] & test-flowing-inset {
 	right: 7px;
 }
 
-[dir="ltr"] test-flowing-inset {
+[dir="ltr"] & test-flowing-inset {
 	right: 8px;
 }
 
-[dir="rtl"] test-flowing-inset {
+[dir="rtl"] & test-flowing-inset {
 	left: 8px;
 }
 

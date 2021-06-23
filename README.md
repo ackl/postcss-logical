@@ -1,3 +1,6 @@
+:warning: This postcss-logical fork has been modified to to work with stylis type pre-processor syntax in jsx files and postcss8
+You are probably looking for the original from [csstools](https://github.com/csstools/postcss-logical)
+
 # PostCSS Logical Properties and Values [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">][postcss]
 
 [![NPM Version][npm-img]][npm-url]
@@ -23,11 +26,13 @@ physical, direction and dimension mappings in CSS, following the
 /* becomes */
 
 .banner:dir(ltr) {
-  padding-left: 20px; padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .banner:dir(rtl) {
-  padding-right: 20px; padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 40px;
 }
 
 .banner {
@@ -39,8 +44,12 @@ physical, direction and dimension mappings in CSS, following the
 
 .banner {
   color: #222222;
-  top: 0; left: 5px; bottom: 10px; right: 5px;
-  padding-left: 20px; padding-right: 40px;
+  top: 0;
+  left: 5px;
+  bottom: 10px;
+  right: 5px;
+  padding-left: 20px;
+  padding-right: 40px;
   resize: vertical;
   transition: color 200ms;
 }
@@ -48,16 +57,21 @@ physical, direction and dimension mappings in CSS, following the
 /* or, when used with { preserve: true } */
 
 .banner:dir(ltr) {
-  padding-left: 20px; padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .banner:dir(rtl) {
-  padding-right: 20px; padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 40px;
 }
 
 .banner {
   color: #222222;
-  top: 0; left: 5px; bottom: 10px; right: 5px;
+  top: 0;
+  left: 5px;
+  bottom: 10px;
+  right: 5px;
   inset: logical 0 5px 10px;
   padding-inline: 20px 40px;
   resize: block;
@@ -122,15 +136,15 @@ any `[dir]` attributes, consider using the following JavaScript:
 
 ```js
 // force at least one dir attribute (this can run at any time)
-document.documentElement.dir=document.documentElement.dir||'ltr';
+document.documentElement.dir = document.documentElement.dir || "ltr";
 ```
 
 Otherwise, consider using the `dir` option to transform all logical properties
 and values to a specific direction.
 
 ```js
-require('postcss-logical')({
-  dir: 'ltr'
+require("postcss-logical")({
+  dir: "ltr",
 });
 ```
 
@@ -145,7 +159,7 @@ npm install postcss-logical --save-dev
 Use [PostCSS Logical Properties and Values] to process your CSS:
 
 ```js
-const postcssLogical = require('postcss-logical');
+const postcssLogical = require("postcss-logical");
 
 postcssLogical.process(YOUR_CSS /*, processOptions, pluginOptions */);
 ```
@@ -153,19 +167,19 @@ postcssLogical.process(YOUR_CSS /*, processOptions, pluginOptions */);
 Or use it as a [PostCSS] plugin:
 
 ```js
-const postcss = require('postcss');
-const postcssLogical = require('postcss-logical');
+const postcss = require("postcss");
+const postcssLogical = require("postcss-logical");
 
-postcss([
-  postcssLogical(/* pluginOptions */)
-]).process(YOUR_CSS /*, processOptions */);
+postcss([postcssLogical(/* pluginOptions */)]).process(
+  YOUR_CSS /*, processOptions */
+);
 ```
 
 [PostCSS Logical Properties and Values] runs in all Node environments, with
 special instructions for:
 
 | [Node](INSTALL.md#node) | [PostCSS CLI](INSTALL.md#postcss-cli) | [Webpack](INSTALL.md#webpack) | [Create React App](INSTALL.md#create-react-app) | [Gulp](INSTALL.md#gulp) | [Grunt](INSTALL.md#grunt) |
-| --- | --- | --- | --- | --- | --- |
+| ----------------------- | ------------------------------------- | ----------------------------- | ----------------------------------------------- | ----------------------- | ------------------------- |
 
 ## Options
 
@@ -192,10 +206,9 @@ the `dir` option will be ignored.
 [git-url]: https://gitter.im/postcss/postcss
 [npm-img]: https://img.shields.io/npm/v/postcss-logical.svg
 [npm-url]: https://www.npmjs.com/package/postcss-logical
-
-[CSS Logical Properties and Values]: https://drafts.csswg.org/css-logical/
-[Gulp PostCSS]: https://github.com/postcss/gulp-postcss
-[Grunt PostCSS]: https://github.com/nDmitry/grunt-postcss
-[PostCSS]: https://github.com/postcss/postcss
-[PostCSS Loader]: https://github.com/postcss/postcss-loader
-[PostCSS Logical Properties and Values]: https://github.com/csstools/postcss-logical
+[css logical properties and values]: https://drafts.csswg.org/css-logical/
+[gulp postcss]: https://github.com/postcss/gulp-postcss
+[grunt postcss]: https://github.com/nDmitry/grunt-postcss
+[postcss]: https://github.com/postcss/postcss
+[postcss loader]: https://github.com/postcss/postcss-loader
+[postcss logical properties and values]: https://github.com/csstools/postcss-logical

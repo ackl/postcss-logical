@@ -22,34 +22,34 @@
 	transition: 1s padding-block-start ease;
 }
 
-[dir="ltr"] .transition-inline-end {
+[dir="ltr"] & .transition-inline-end {
 	transition: 1s right ease;
 }
 
-[dir="rtl"] .transition-inline-end {
+[dir="rtl"] & .transition-inline-end {
 	transition: 1s left ease;
 }
 
-[dir="ltr"] .transition-inline-end {
+[dir="ltr"] & .transition-inline-end {
 	transition: 1s margin-right ease;
 }
 
-[dir="rtl"] .transition-inline-end {
+[dir="rtl"] & .transition-inline-end {
 	transition: 1s margin-left ease;
 }
 
-[dir="ltr"] .transition-inline-end {
+[dir="ltr"] & .transition-inline-end {
 	transition: 1s padding-right ease;
 }
 
-[dir="rtl"] .transition-inline-end {
+[dir="rtl"] & .transition-inline-end {
 	transition: 1s padding-left ease;
 }
 
-[dir="ltr"] .transition-mixed {
+[dir="ltr"] & .transition-mixed {
 	transition: 1s opacity ease, 1s left ease;
 }
 
-[dir="rtl"] .transition-mixed {
+[dir="rtl"] & .transition-mixed {
 	transition: 1s opacity ease, 1s right ease;
 }

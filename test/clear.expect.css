@@ -1,13 +1,13 @@
-[dir="ltr"] test-clear {
+[dir="ltr"] & test-clear {
 	clear: left;
 }
-[dir="rtl"] test-clear {
+[dir="rtl"] & test-clear {
 	clear: right;
 }
-[dir="ltr"] test-clear {
+[dir="ltr"] & test-clear {
 	clear: right;
 }
-[dir="rtl"] test-clear {
+[dir="rtl"] & test-clear {
 	clear: left;
 }
 test-clear {

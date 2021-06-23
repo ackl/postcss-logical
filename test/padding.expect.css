@@ -15,37 +15,37 @@ test-padding {
 	padding-bottom: 16px;
 }
 
-[dir="ltr"] test-flowing-padding {
+[dir="ltr"] & test-flowing-padding {
 	padding: 1px 4px 3px 2px;
 }
 
-[dir="rtl"] test-flowing-padding {
+[dir="rtl"] & test-flowing-padding {
 	padding: 1px 2px 3px 4px;
 }
 
-[dir="ltr"] test-flowing-padding {
+[dir="ltr"] & test-flowing-padding {
 	padding-left: 5px;
 	padding-right: 6px;
 }
 
-[dir="rtl"] test-flowing-padding {
+[dir="rtl"] & test-flowing-padding {
 	padding-right: 5px;
 	padding-left: 6px;
 }
 
-[dir="ltr"] test-flowing-padding {
+[dir="ltr"] & test-flowing-padding {
 	padding-left: 7px;
 }
 
-[dir="rtl"] test-flowing-padding {
+[dir="rtl"] & test-flowing-padding {
 	padding-right: 7px;
 }
 
-[dir="ltr"] test-flowing-padding {
+[dir="ltr"] & test-flowing-padding {
 	padding-right: 8px;
 }
 
-[dir="rtl"] test-flowing-padding {
+[dir="rtl"] & test-flowing-padding {
 	padding-left: 8px;
 }
 

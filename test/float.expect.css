@@ -1,13 +1,13 @@
-[dir="ltr"] test-float {
+[dir="ltr"] & test-float {
 	float: left;
 }
-[dir="rtl"] test-float {
+[dir="rtl"] & test-float {
 	float: right;
 }
-[dir="ltr"] test-float {
+[dir="ltr"] & test-float {
 	float: right;
 }
-[dir="rtl"] test-float {
+[dir="rtl"] & test-float {
 	float: left;
 }
 test-float {

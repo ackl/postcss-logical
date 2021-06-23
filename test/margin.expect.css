@@ -15,37 +15,37 @@ test-margin {
 	margin-bottom: 16px;
 }
 
-[dir="ltr"] test-flowing-margin {
+[dir="ltr"] & test-flowing-margin {
 	margin: 1px 4px 3px 2px;
 }
 
-[dir="rtl"] test-flowing-margin {
+[dir="rtl"] & test-flowing-margin {
 	margin: 1px 2px 3px 4px;
 }
 
-[dir="ltr"] test-flowing-margin {
+[dir="ltr"] & test-flowing-margin {
 	margin-left: 5px;
 	margin-right: 6px;
 }
 
-[dir="rtl"] test-flowing-margin {
+[dir="rtl"] & test-flowing-margin {
 	margin-right: 5px;
 	margin-left: 6px;
 }
 
-[dir="ltr"] test-flowing-margin {
+[dir="ltr"] & test-flowing-margin {
 	margin-left: 7px;
 }
 
-[dir="rtl"] test-flowing-margin {
+[dir="rtl"] & test-flowing-margin {
 	margin-right: 7px;
 }
 
-[dir="ltr"] test-flowing-margin {
+[dir="ltr"] & test-flowing-margin {
 	margin-right: 8px;
 }
 
-[dir="rtl"] test-flowing-margin {
+[dir="rtl"] & test-flowing-margin {
 	margin-left: 8px;
 }
 

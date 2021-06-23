@@ -1,13 +1,13 @@
-[dir="ltr"] test-text-align {
+[dir="ltr"] & test-text-align {
 	text-align: left;
 }
-[dir="rtl"] test-text-align {
+[dir="rtl"] & test-text-align {
 	text-align: right;
 }
-[dir="ltr"] test-text-align {
+[dir="ltr"] & test-text-align {
 	text-align: right;
 }
-[dir="rtl"] test-text-align {
+[dir="rtl"] & test-text-align {
 	text-align: left;
 }
 test-text-align {
