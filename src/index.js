@@ -101,7 +101,8 @@ const transformsRegExp = new RegExp(
 );
 
 // properties whose values will not be split
-const unsplitPropRegExp = /^(border-block|border-block-end|border-block-start|border-inline|border-inline-end|border-inline-start)$/i;
+const unsplitPropRegExp =
+	/^(border-block|border-block-end|border-block-start|border-inline|border-inline-end|border-inline-start)$/i;
 
 // plugin
 function postcssLogicalProperties(opts) {
@@ -133,7 +134,7 @@ function postcssLogicalProperties(opts) {
 
 				[].concat(replacer).forEach((replacement) => {
 					if (replacement.type === "rule") {
-						if (parent.parent) {
+						if (parent.parent && parent.type !== "atrule") {
 							parent.before(replacement);
 						} else {
 							decl.before(replacement);
