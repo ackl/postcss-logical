@@ -11,7 +11,7 @@ export default (decl, dir) => {
 			: postcss.rule({ selector: "&" });
 
 	rule.selectors = rule.selectors.map((selector) => {
-		return Object(decl.parent).type === "root" || selector[0] === "&"
+		return Object(decl.parent).type === "root" || selector.includes("&")
 			? `[dir="${dir}"] ${selector}`
 			: `[dir="${dir}"] & ${selector}`;
 	});
