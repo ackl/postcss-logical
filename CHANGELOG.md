@@ -1,5 +1,17 @@
 # Changes to PostCSS Logical Properties
 
+### 5.0.3
+- Fixed: allow use with styled-components props interpolation values
+
+### 5.0.2
+- Fixed: allow use with nested @media queries
+
+### 5.0.1
+- put [dir] attr selector at beginning of selector chain
+
+### 5.0.0
+- Fixed: allow use with jsx syntax
+
 ### 4.0.2 (June 10, 2019)
 
 - Fixed: Restored transforms for `max-block-size`, `max-inline-size`,

@@ -104,6 +104,12 @@ const transformsRegExp = new RegExp(
 const unsplitPropRegExp =
 	/^(border-block|border-block-end|border-block-start|border-inline|border-inline-end|border-inline-start)$/i;
 
+
+// styled components props interpolations
+// e.g. ${props => props.primary ? "palevioletred" : "white"};
+const propsInterpolationRegExp = /(props|function|=>)/;
+
+
 // plugin
 function postcssLogicalProperties(opts) {
 	opts = Object(opts);
@@ -123,7 +129,9 @@ function postcssLogicalProperties(opts) {
 				const parent = decl.parent;
 				const values = unsplitPropRegExp.test(decl.prop)
 					? [decl.value]
-					: splitBySpace(decl.value, true);
+					: propsInterpolationRegExp.test(decl.value)
+						? [decl.value]
+						: splitBySpace(decl.value, true);
 				const prop = decl.prop.toLowerCase();
 
 				const replacer = transforms[prop](decl, values, dir);
